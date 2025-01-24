@@ -5,7 +5,7 @@ import gitHub from "@images/github.svg";
 import logoDark from "@images/astronaut-logo-dark.svg";
 import logoLight from "@images/astronaut-logo-light.svg";
 
-import Master_Necro from "@images/Master_Necro.gif"
+import Master_Necro from "@images/Master_Necro.png"
 
 const currentYear = new Date().getFullYear();
 ---
@@ -111,7 +111,15 @@ const currentYear = new Date().getFullYear();
 
   img {
     height: auto;
-    margin: var(--space-l) 3.5rem;
+    <div class="button-wrapper">
+      <a
+        id="template-button"
+        href=""
+        ><span>Master Necronic (Second Channel)</span>
+        <Image alt="GitHub logo" src={gitHub} height={60} width={60} />
+      </a>
+    </div>
+    margin: var(--space-l) 0;
   }
 
   section {
